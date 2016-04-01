@@ -1,6 +1,11 @@
 <div class="row text-center">
   <div class="col-sm-6">
     <h2>Questions:</h2>
+      <ul id="question-list">
+        {{#each model.questions as |question|}}
+          <li>{{question-tile question=question}}</li>
+        {{/each}}
+      </ul>
   </div>
 
   <div class="col-sm-6">
