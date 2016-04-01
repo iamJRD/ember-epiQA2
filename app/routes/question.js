@@ -17,8 +17,20 @@ export default Ember.Route.extend({
     },
 
     destroyQuestion(question){
-      question.destroyRecord();
-      this.transitionTo('index');
+      if(confirm('Are you positive that you want to delete this question and all of it\'s answers?')) {
+        question.destroyRecord();
+        this.transitionTo('index');
+      }
+    },
+
+    saveAnswer3(params) {
+      var newAnswer = this.store.createRecord('answer', params);
+      var question = params.question;
+      question.get('answer').addObject(newAnswer);
+      newAnswer.save().then(function() {
+        return question.save();
+      });
+      this.transitionTo('question', params.question);
     }
   }
 });
