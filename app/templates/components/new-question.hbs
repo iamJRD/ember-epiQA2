@@ -13,12 +13,14 @@
 
       <div class="form-group">
         <label for="content">Question Content: </label>
-        {{textarea rows="10" cols="100" class="textboxArea" value=content id="content"}}
+        {{textarea rows="10" cols="50" class="textboxArea" value=content id="content"}}
       </div>
 
       <div class="form-group">
         <label for="note">Notes: </label>
         {{textarea rows="5" cols="50" class="textboxArea" value=note id="note"}}
       </div>
+
+      <button {{action 'saveQuestion'}} class="btn btn-success">Ask Question!</button>
     </form>
   </div>
