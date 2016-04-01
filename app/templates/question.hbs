@@ -8,6 +8,8 @@
     <h6>Additional Notes: {{model.note}}</h6>
 
     {{update-question question=model updateQuestion="updateQuestion"}}
+
+    <button {{action 'destroyQuestion' model}} class="btn btn-danger">Delete Question</button>
   </div>
 
   <div class="col-sm-6">
