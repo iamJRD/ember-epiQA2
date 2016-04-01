@@ -1,15 +1,17 @@
 <div class="row text-center">
   <div class="col-sm-6">
-    <h2>Questions:</h2>
-      <ul id="question-list">
+    <h2 class="homeHeaders">Questions:</h2>
+      <ul id="questionList">
         {{#each model.questions as |question|}}
+        <div class="displayBox">
           <li>{{question-tile question=question}}</li>
+        </div>
         {{/each}}
       </ul>
   </div>
 
   <div class="col-sm-6">
-    <h2>Post a Question:</h2>
+    <h2 class="homeHeaders">Post a Question:</h2>
       {{new-question question=question saveQuestion2="saveQuestion3"}}
   </div>
 </div>

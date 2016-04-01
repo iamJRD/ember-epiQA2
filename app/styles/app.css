@@ -1,4 +1,13 @@
-#question-list {
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #9a9a9a;
+}
+
+#updateQuestionBtn {
+  float: left;
+}
+
+#questionList {
   list-style: none;
   margin-right: 35px;
 }
@@ -7,6 +16,108 @@
   float: right;
 }
 
-#updateQuestionBtn {
+#updateFormShowBtn {
   float: left;
+}
+
+#headerText {
+  margin-top: 250px;
+  text-shadow: 3px 3px 6px #9a9a9a;
+}
+
+#headerText p {
+  color: #fff;
+}
+
+#mainHeader a {
+  color: #fff;
+  font-weight: bold;
+}
+
+#mainHeader a:hover {
+  text-decoration: none;
+  color: #587dff;
+}
+
+#mainHeader a:visited {
+  text-decoration: none;
+}
+
+.displayBox {
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #000;
+  outline:0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.author {
+  color: #fff;
+}
+
+.content {
+  font-size: 18px;
+}
+
+.footer {
+  color: #fff;
+}
+
+.homeHeaders {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #fff;
+}
+
+.jumbotron {
+  background-image: url(https://images2.alphacoders.com/438/438082.png);
+  width: 100%;
+  height: 100%;
+  padding-bottom: 250px;
+}
+
+.questionHeader a {
+  color: #f00;
+}
+
+.questionPageHeaders {
+  color: #f00;
+}
+
+.textbox {
+  height: 25px;
+  width: 200px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #000;
+  outline:0;
+}
+
+.textboxArea {
+  background-color: transparent;
+  border-style: solid;
+  border-width: 0px 0px 1px 1px;
+  border-color: #000;
+  outline:0;
+}
+
+/*FORM PLACEHOLDER STYLING*/
+::-webkit-input-placeholder {
+   color: #ddd;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #ddd;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #ddd;
+}
+
+:-ms-input-placeholder {
+   color: #ddd;
 }

@@ -1,9 +1,9 @@
 <div class="row text-center">
   <div class="col-sm-6">
-    <h2>{{model.title}}</h2>
-      <h6>Asked by: {{model.author}}</h6>
+    <h2 class="questionPageHeaders">{{model.title}}</h2>
+      <h6 class="author">Asked by: {{model.author}}</h6>
       <br>
-    <p id="question-content">{{model.content}}</p>
+    <p class="content">{{model.content}}</p>
       <br>
     <h6>Additional Notes: {{model.note}}</h6>
 
@@ -16,7 +16,7 @@
   </div>
 
   <div class="col-sm-6">
-    <h3>Answers for this Question:</h3>
+    <h3 class="questionPageHeaders">Answers for this Question:</h3>
       {{#each model.answer as |answer|}}
         {{display-answer answer=answer}}
       {{/each}}
