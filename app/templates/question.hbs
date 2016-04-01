@@ -12,6 +12,10 @@
     {{update-question question=model updateQuestion="updateQuestion"}}
 
     <button {{action 'destroyQuestion' model}} class="btn btn-danger">Delete Question</button>
+
+    {{#each model.answer as |answer|}}
+      {{display-answer answer=answer}}
+    {{/each}}
   </div>
 
   <div class="col-sm-6">
