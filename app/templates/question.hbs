@@ -7,19 +7,18 @@
       <br>
     <h6>Additional Notes: {{model.note}}</h6>
 
-    {{new-answer question=model answer=answer saveAnswer2="saveAnswer3"}}
-
     {{update-question question=model updateQuestion="updateQuestion"}}
 
-    <button {{action 'destroyQuestion' model}} class="btn btn-danger">Delete Question</button>
 
-    {{#each model.answer as |answer|}}
-      {{display-answer answer=answer}}
-    {{/each}}
+    <button {{action 'destroyQuestion' model}} class="btn btn-danger" id="deleteQuestionBtn">Delete Question</button>
+
+    {{new-answer question=model answer=answer saveAnswer2="saveAnswer3"}}
   </div>
 
   <div class="col-sm-6">
-    <h3>Post an Answer for this Question:</h3>
-
+    <h3>Answers for this Question:</h3>
+      {{#each model.answer as |answer|}}
+        {{display-answer answer=answer}}
+      {{/each}}
   </div>
 </div>

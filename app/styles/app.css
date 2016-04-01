@@ -2,3 +2,11 @@
   list-style: none;
   margin-right: 35px;
 }
+
+#deleteQuestionBtn {
+  float: right;
+}
+
+#updateQuestionBtn {
+  float: left;
+}
