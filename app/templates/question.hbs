@@ -3,16 +3,16 @@
     <h2 class="questionPageHeaders">{{model.title}}</h2>
       <h6 class="author">Asked by: {{model.author}}</h6>
       <br>
-    <p class="content">{{model.content}}</p>
-      <br>
-    <h6>Additional Notes: {{model.note}}</h6>
+      <p class="content">{{model.content}}</p>
+        <br>
+      <h6>Additional Notes: {{model.note}}</h6>
 
-    {{update-question question=model updateQuestion="updateQuestion"}}
+      {{update-question question=model updateQuestion="updateQuestion"}}
 
 
-    <button {{action 'destroyQuestion' model}} class="btn btn-danger" id="deleteQuestionBtn">Delete Question</button>
+      <button {{action 'destroyQuestion' model}} class="btn btn-danger" id="deleteQuestionBtn">Delete Question</button>
 
-    {{new-answer question=model answer=answer saveAnswer2="saveAnswer3"}}
+      {{new-answer question=model answer=answer saveAnswer2="saveAnswer3"}}
   </div>
 
   <div class="col-sm-6">

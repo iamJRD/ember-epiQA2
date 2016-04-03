@@ -9,6 +9,7 @@ export default Ember.Component.extend({
         content: this.get('content'),
         note: this.get('note')
       };
+      
       this.sendAction('saveQuestion2', params);
     }
   }
