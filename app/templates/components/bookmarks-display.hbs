@@ -1,9 +1,13 @@
 {{#each bookmark.bookmarks as |question|}}
-  <h3 class="questionHeader">
-    {{#link-to 'question' question.id}}
-      {{question.title}}
-    {{/link-to}}
-  </h3>
+  <div class="displayBox">
+    <h3 class="questionHeader">
+      {{#link-to 'question' question.id}}
+        {{question.title}}
+      {{/link-to}}
+    </h3>
 
-  <h6 class="author">Asked by: {{question.author}}</h6>
+    <h6 class="author">Asked by: {{question.author}}</h6>
+
+    {{question-answers question}}
+  </div>
 {{/each}}
