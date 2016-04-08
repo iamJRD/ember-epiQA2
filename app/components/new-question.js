@@ -7,10 +7,13 @@ export default Ember.Component.extend({
         title: this.get('title'),
         author: this.get('author'),
         content: this.get('content'),
-        note: this.get('note')
+        note: this.get('note'),
       };
-      
       this.sendAction('saveQuestion2', params);
+      this.set('title', '');
+      this.set('author', '');
+      this.set('content', '');
+      this.set('note', '');
     }
   }
 });

@@ -2,11 +2,7 @@
   <div class="col-sm-6">
     <h2 class="homeHeaders">Questions:</h2>
       <ul id="questionList">
-        {{#each model.questions as |question|}}
-          <div class="displayBox">
-            <li>{{question-tile question=question}} {{question-answers question}}</li>
-          </div>
-        {{/each}}
+        {{display-questions questions=model.questions}}
       </ul>
   </div>
 
