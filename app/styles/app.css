@@ -65,6 +65,12 @@ body {
 .footer {
   color: #fff;
 }
+.glyphicon-bookmark {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+  color: #0021ff;
+}
 
 .helperText {
   font-weight: bold;
