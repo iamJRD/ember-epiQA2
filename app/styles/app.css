@@ -98,6 +98,10 @@ body {
   font-weight: bold;
 }
 
+.nav-links a {
+  color: #f2ff00;
+}
+
 .questionHeader a {
   color: #f00;
 }
