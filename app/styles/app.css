@@ -43,6 +43,10 @@ body {
   text-decoration: none;
 }
 
+.aboutBody a {
+  color: #fff;
+}
+
 .displayBox {
   background-color: transparent;
   border-style: solid;
@@ -96,6 +100,7 @@ body {
   float: right;
   padding-right: 2em;
   font-weight: bold;
+  color: #62a8b9;
 }
 
 .nav-links a {
