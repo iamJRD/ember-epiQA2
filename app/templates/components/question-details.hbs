@@ -1,0 +1,8 @@
+<h2 class="questionPageHeaders">{{question.title}}</h2>
+  <h6 class="author">Asked by: {{question.author}}</h6>
+  <br>
+  <p class="content">{{question.content}}</p>
+    <br>
+  <h6>Additional Notes: {{question.note}}</h6>
+
+  <button {{action 'bookmarkQuestion' question}} class="btn btn-primary">Bookmark this Question</button>

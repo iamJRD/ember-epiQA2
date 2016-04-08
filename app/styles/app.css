@@ -79,6 +79,14 @@ body {
   padding-bottom: 250px;
 }
 
+.nav-links {
+  padding-bottom: 3em;
+  margin-top: -2em;
+  float: right;
+  padding-right: 2em;
+  font-weight: bold;
+}
+
 .questionHeader a {
   color: #f00;
 }
