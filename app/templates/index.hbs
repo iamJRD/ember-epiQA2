@@ -4,7 +4,7 @@
       <ul id="questionList">
         {{#each model.questions as |question|}}
           <div class="displayBox">
-            <li>{{question-tile question=question}}</li>
+            <li>{{question-tile question=question}} {{question-answers question}}</li>
           </div>
         {{/each}}
       </ul>

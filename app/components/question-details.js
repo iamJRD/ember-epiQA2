@@ -5,7 +5,6 @@ export default Ember.Component.extend({
 
   actions: {
     bookmarkQuestion(question) {
-      console.log('success');
       this.get('bookmark').add(question);
     }
   }
