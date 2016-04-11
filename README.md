@@ -1,6 +1,6 @@
 # Epi-QA v2.0
 
-#### By: Jared Beckler | Epicodus | April 8th, 2016
+#### By: Jared Beckler | Epicodus | April 2016
 
 This is a basic question and answer forum constructed using Ember.js
 
